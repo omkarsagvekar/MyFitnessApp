@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:background="@color/colorBackground">
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="104dp"
+        android:background="@android:color/darker_gray"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:hint="NAME"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="220dp"
+        android:background="@android:color/darker_gray"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:hint="PASSWORD"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="126dp"
+        android:background="@android:color/darker_gray"
+        android:onClick="onClick"
+        android:text="LOGIN"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="236dp"
+        android:layout_height="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="51dp"
+        android:background="@android:color/darker_gray"
+        android:layout_centerHorizontal="true"
+        android:text="No of incorrect Attempts:"
+        android:textAlignment="center" />
+</RelativeLayout>

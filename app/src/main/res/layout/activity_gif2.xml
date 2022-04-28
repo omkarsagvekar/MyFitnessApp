@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="ForBeginners.gif2">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="81dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="44dp"
+        android:text="Rotating Arm"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="119dp"
+        android:layout_height="99dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/armrotation" />
+
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="258dp"
+        android:text="Quad Stretch"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="321dp"
+        android:layout_marginEnd="0dp"
+        android:src="@drawable/quadstretch" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="207dp"
+        android:layout_height="163dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="267dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:text="Stand on your left leg, one knee touching the other. You can hold a chair or the wall to keep you steady if needed. Grab your right foot, using your right hand, and pull it towards your butt. ... Hold the position for 20 to 30 seconds, then repeat, switching from your left leg to your right."
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="italic"
+        android:layout_alignLeft="@+id/textView6"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="197dp"
+        android:layout_height="182dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="45dp"
+        android:text="Arm up exercise is a very good exercise which helps to warm-up your shoulder and upper back. While performing arm rotation, your hands should be stretch to the shoulder level and moved in a spherical motion. Targets your Shoulders, upper back, chest, triceps, biceps"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="175dp"
+        android:layout_marginBottom="110dp"
+        android:onClick="clicknext2"
+        android:text="Next>"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

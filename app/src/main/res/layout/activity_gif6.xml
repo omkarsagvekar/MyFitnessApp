@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ForBeginners.gif6">
+
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="59dp"
+        android:text="Dumbell Overhead"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="121dp"
+        android:layout_height="104dp"
+        android:layout_alignEnd="@+id/textView21"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="111dp"
+        android:src="@drawable/dumbelloverhead" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="166dp"
+        android:layout_height="133dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="494dp"
+        android:text="Sit upright on bench with dumbbells over head. Make sure back is flat. Lower dumbbells slowly to shoulders. When arms are at 90 degrees, press the dumbbells back up and repeat."
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="281dp"
+        android:text="Biceps Curl With Dumbell"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="348dp"
+        android:src="@drawable/bicepscurl1" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="187dp"
+        android:layout_height="127dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="340dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:text="Stand up straight with a dumbbell in each hand at arm's length. ... Now, keeping the upper arms stationary, exhale and curl the weights while contracting your biceps. ... Then, inhale and slowly begin to lower the dumbbells back to the starting position."
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="166dp"
+        android:layout_marginBottom="143dp"
+        android:onClick="clicknext6"
+        android:text="Next>"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

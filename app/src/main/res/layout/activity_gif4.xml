@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ForBeginners.gif4">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="100dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/textView14"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="338dp"
+        android:text="Lat Pull Down"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView5"
+        android:layout_width="117dp"
+        android:layout_height="119dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="208dp"
+        android:src="@drawable/latpulldown" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="191dp"
+        android:layout_height="133dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="195dp"
+        android:text="Sit down on a pull-down machine with a wide bar attached to the top pulley.Grab the bar with the palms facing forward using the prescribed grip.As you breathe out, bring the bar down until it touches your upper chest by drawing the shoulders and the upper arms down and back.Repeat this motion for the prescribed amount of repetitions. "
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimary"
+        android:textSize="10sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="100dp"
+        android:layout_height="32dp"
+        android:layout_alignLeft="@+id/textView14"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="65dp"
+        android:text="Push ups"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="151dp"
+        android:layout_alignStart="@+id/textView15"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="212dp"
+        android:layout_marginRight="212dp"
+        android:text="Get on the floor on all fours, positioning your hands slightly wider than your shoulders.Extend your legs back so that you are balanced on your hands and toes. Keep your body in a straight line.Inhale as you slowly bend your elbows and lower yourself until your elbows are at a 90-degree angle. Exhale as you begin contracting your chest muscles and pushing back up through your hands to the start position."
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimary"
+        android:textSize="10sp"
+        android:textStyle="italic" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView4"
+        android:layout_width="169dp"
+        android:layout_height="136dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="235dp"
+        android:layout_marginLeft="235dp"
+        android:layout_marginTop="94dp"
+        android:src="@drawable/pushups" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView16"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-91dp"
+        android:onClick="clicknext4"
+        android:text="Next>"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+</RelativeLayout>

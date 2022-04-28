@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ForBeginners.gif7">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="164dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="453dp"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/tricepextension" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="172dp"
+        android:layout_height="152dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="460dp"
+        android:text="Stand upright, feet shoulder width apart. Hold dumbbell directly above head with arm fully extended. Clasp elbow with free hand for support. Slowly let elbow fold so dumbbell is lowered behind head. Extend arm back to starting position. Repeat for the desired number of reps and switch arms."
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimary"
+        android:textSize="10sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="130dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginBottom="144dp"
+        android:text="----Finish----"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="127dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="48dp"
+        android:text="Standing Triceps Curl"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="287dp"
+        android:onClick="clicktohome"
+        android:text="Return "
+        android:textColor="@color/white"
+        android:textStyle="italic" />
+</RelativeLayout>
