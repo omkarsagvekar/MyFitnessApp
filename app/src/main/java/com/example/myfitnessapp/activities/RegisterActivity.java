@@ -2,6 +2,8 @@ package com.example.myfitnessapp.activities;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.myfitnessapp.R;
 import com.example.myfitnessapp.helpers.InputValidation;
@@ -13,9 +15,7 @@ import com.google.android.material.textfield.TextInputLayout;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
-import androidx.appcompat.widget.AppCompatTextView;
-import androidx.core.widget.NestedScrollView;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 /**
  *
@@ -24,8 +24,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
     private final AppCompatActivity activity = RegisterActivity.this;
 
-    private NestedScrollView nestedScrollView;
-
+    private ConstraintLayout constraintLayout;
     private TextInputLayout textInputLayoutName;
     private TextInputLayout textInputLayoutEmail;
     private TextInputLayout textInputLayoutPassword;
@@ -36,8 +35,8 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     private TextInputEditText textInputEditTextPassword;
     private TextInputEditText textInputEditTextConfirmPassword;
 
-    private AppCompatButton appCompatButtonRegister;
-    private AppCompatTextView appCompatTextViewLoginLink;
+    private Button btnRegister;
+    private TextView tvLoginLink;
 
     private InputValidation inputValidation;
     private DatabaseHelper databaseHelper;
@@ -58,21 +57,21 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
      * This method is to initialize views
      */
     private void initViews() {
-        nestedScrollView = (NestedScrollView) findViewById(R.id.nestedScrollView);
+        constraintLayout = findViewById(R.id.constaintlayout);
 
-        textInputLayoutName = (TextInputLayout) findViewById(R.id.textInputLayoutName);
-        textInputLayoutEmail = (TextInputLayout) findViewById(R.id.textInputLayoutEmail);
-        textInputLayoutPassword = (TextInputLayout) findViewById(R.id.textInputLayoutPassword);
-        textInputLayoutConfirmPassword = (TextInputLayout) findViewById(R.id.textInputLayoutConfirmPassword);
+        textInputLayoutName = (TextInputLayout) findViewById(R.id.til_name);
+        textInputLayoutEmail = (TextInputLayout) findViewById(R.id.til_email);
+        textInputLayoutPassword = (TextInputLayout) findViewById(R.id.til_password);
+        textInputLayoutConfirmPassword = (TextInputLayout) findViewById(R.id.til_cpassword);
 
-        textInputEditTextName = (TextInputEditText) findViewById(R.id.textInputEditTextName);
-        textInputEditTextEmail = (TextInputEditText) findViewById(R.id.textInputEditTextEmail);
-        textInputEditTextPassword = (TextInputEditText) findViewById(R.id.textInputEditTextPassword);
-        textInputEditTextConfirmPassword = (TextInputEditText) findViewById(R.id.textInputEditTextConfirmPassword);
+        textInputEditTextName = (TextInputEditText) findViewById(R.id.et_name);
+        textInputEditTextEmail = (TextInputEditText) findViewById(R.id.et_email);
+        textInputEditTextPassword = (TextInputEditText) findViewById(R.id.et_password);
+        textInputEditTextConfirmPassword = (TextInputEditText) findViewById(R.id.et_cpassword);
 
-        appCompatButtonRegister = (AppCompatButton) findViewById(R.id.appCompatButtonRegister);
+        btnRegister = (Button) findViewById(R.id.btn_register);
 
-        appCompatTextViewLoginLink = (AppCompatTextView) findViewById(R.id.appCompatTextViewLoginLink);
+        tvLoginLink = (TextView) findViewById(R.id.tv_loginLink);
 
     }
 
@@ -80,8 +79,8 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
      * This method is to initialize listeners
      */
     private void initListeners() {
-        appCompatButtonRegister.setOnClickListener(this);
-        appCompatTextViewLoginLink.setOnClickListener(this);
+        btnRegister.setOnClickListener(this);
+        tvLoginLink.setOnClickListener(this);
 
     }
 
@@ -105,11 +104,11 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     public void onClick(View v) {
         switch (v.getId()) {
 
-            case R.id.appCompatButtonRegister:
+            case R.id.btn_register:
                 postDataToSQLite();
                 break;
 
-            case R.id.appCompatTextViewLoginLink:
+            case R.id.tv_loginLink:
                 finish();
                 break;
         }
@@ -145,13 +144,13 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             databaseHelper.addUser(user);
 
             // Snack Bar to show success message that record saved successfully
-            Snackbar.make(nestedScrollView, getString(R.string.success_message), Snackbar.LENGTH_LONG).show();
+            Snackbar.make(constraintLayout, getString(R.string.success_message), Snackbar.LENGTH_LONG).show();
             emptyInputEditText();
 
 
         } else {
             // Snack Bar to show error message that record already exists
-            Snackbar.make(nestedScrollView, getString(R.string.error_email_exists), Snackbar.LENGTH_LONG).show();
+            Snackbar.make(constraintLayout, getString(R.string.error_email_exists), Snackbar.LENGTH_LONG).show();
         }
 
 

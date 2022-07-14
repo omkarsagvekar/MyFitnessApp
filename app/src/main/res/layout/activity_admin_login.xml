@@ -3,45 +3,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
-    tools:background="@color/colorBackground">
+    tools:background="@color/colorBackground"
+    android:padding="20dp">
 
-    <EditText
-        android:id="@+id/etName"
-        android:layout_width="wrap_content"
-        android:layout_height="53dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="104dp"
-        android:background="@android:color/darker_gray"
-        android:ems="10"
-        android:layout_centerHorizontal="true"
-        android:hint="NAME"
-        android:inputType="textPersonName"
-        android:textAlignment="center"
-        android:textSize="24sp" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_username"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginTop="40dp"
+        android:layout_margin="10dp"
+        app:startIconDrawable="@drawable/ic_admin"
+        app:endIconMode="clear_text">
 
-    <EditText
-        android:id="@+id/etPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="49dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="220dp"
-        android:background="@android:color/darker_gray"
-        android:ems="10"
-        android:layout_centerHorizontal="true"
-        android:hint="PASSWORD"
-        android:inputType="textPersonName"
-        android:textAlignment="center"
-        android:textSize="24sp" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:singleLine="true"
+            android:maxLines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_password"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginTop="40dp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/til_username"
+        app:startIconDrawable="@drawable/ic_password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_adminPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="numberPassword"
+            android:maxLength="5"
+            android:maxLines="1"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/btn"
+        android:id="@+id/btn_adLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/til_password"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="126dp"
-        android:background="@android:color/darker_gray"
         android:onClick="onClick"
         android:text="LOGIN"
         android:textAlignment="center" />
@@ -50,10 +60,10 @@
         android:id="@+id/tvInfo"
         android:layout_width="236dp"
         android:layout_height="34dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="51dp"
-        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/btn_adLogin"
         android:layout_centerHorizontal="true"
         android:text="No of incorrect Attempts:"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+
 </RelativeLayout>

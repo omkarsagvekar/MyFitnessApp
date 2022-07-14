@@ -18,6 +18,7 @@ public class gif7 extends AppCompatActivity {
     }
     public void clicktohome(View v) {
         Intent i = new Intent(this, SkipStep.class);
+        i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(i);
     }
 }

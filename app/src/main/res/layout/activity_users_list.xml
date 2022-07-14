@@ -24,6 +24,13 @@
             android:layout_height="wrap_content"
             android:textColor="@color/white"/>
 
+        <Button
+            android:id="@+id/logoutBtn"
+            android:text="Logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"/>
+
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <androidx.appcompat.widget.AppCompatTextView

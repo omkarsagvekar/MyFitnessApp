@@ -38,7 +38,6 @@
         android:layout_width="207dp"
         android:layout_height="wrap_content"
         android:onClick="skipthis"
-        android:text="Skip This>>"
-        android:textColor="@color/colorPrimary" />
+        android:text="Skip This>>"/>
 
 </LinearLayout>

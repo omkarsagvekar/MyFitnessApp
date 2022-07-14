@@ -68,9 +68,9 @@
         android:layout_alignEnd="@+id/textView5"
         android:layout_alignParentBottom="true"
         android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="346dp"
-        android:layout_marginTop="10dp"
         android:src="@drawable/jumping_jack" />
 
     <TextView
@@ -88,7 +88,7 @@
         android:textStyle="italic" />
 
     <Button
-        android:id="@+id/btn1"
+        android:id="@+id/btn_chest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView2"

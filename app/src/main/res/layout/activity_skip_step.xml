@@ -4,68 +4,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fitnessbackgrounds2"
+    android:background="@drawable/bodyanatomy"
     tools:context="SkipStep">
 
-
     <Button
-        android:id="@+id/btn5"
+        android:id="@+id/btn_triceps"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="446dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="258dp"
+        android:layout_marginEnd="10dp"
         android:onClick="Clicktriceps"
         android:text="TRICEPS"
         android:textColor="@color/white"
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/btn6"
+        android:id="@+id/btn_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="260dp"
-        android:layout_marginTop="152dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="236dp"
         android:onClick="Clickback"
         android:text="BACK"
         android:textColor="@color/white"
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/btn7"
+        android:id="@+id/btn_legs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="260dp"
-        android:layout_marginTop="249dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="398dp"
         android:onClick="Clicklegs"
         android:text="LEGS"
         android:textColor="@color/white"
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/btn1"
+        android:id="@+id/btn_chest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="152dp"
+        android:layout_marginTop="180dp"
         android:onClick="Clickchest"
         android:text="CHEST"
         android:textColor="@color/white"
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/btn2"
+        android:id="@+id/btn_shoulder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="249dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="10dp"
         android:onClick="Clickshoulder"
         android:text="SHOULDER"
-        android:textColor="@color/white"
         android:textStyle="bold" />
 
     <Button
@@ -77,33 +78,133 @@
         android:layout_marginTop="23dp"
         android:onClick="Click_by"
         android:text="FOR BEGINNERS"
-        android:textColor="@color/white"
         android:textStyle="bold" />
 
+
+    <View
+        android:id="@+id/line_chest"
+        android:layout_width="65dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="200dp"
+        android:layout_toEndOf="@+id/btn_chest"
+        android:background="@drawable/dashedline" />
+
+    <View
+        android:id="@+id/line_biceps"
+        android:layout_width="30dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toStartOf="@+id/btn_biceps"
+        android:background="@drawable/dashedline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/line_triceps"
+        android:layout_width="50dp"
+        android:layout_height="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/dashedline"
+        android:rotation="45"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/line_legs"
+        android:layout_width="50dp"
+        android:layout_height="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="370dp"
+        android:background="@drawable/dashedline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/line_legs2"
+        android:layout_width="25dp"
+        android:layout_height="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="540dp"
+        android:background="@drawable/dashedline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/line_legs3"
+        android:layout_width="220dp"
+        android:layout_height="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="432dp"
+        android:background="@drawable/dashedline"
+        android:rotation="90"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/line_legs4"
+        android:layout_width="25dp"
+        android:layout_height="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="420dp"
+        android:background="@drawable/dashedline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/line_back"
+        android:layout_width="50dp"
+        android:layout_height="6dp"
+        android:layout_marginTop="240dp"
+        android:layout_toEndOf="@+id/btn_back"
+        android:background="@drawable/dashedline"
+        android:rotation="-20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <View
+        android:id="@+id/line_shoulder"
+        android:layout_width="70dp"
+        android:layout_height="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/dashedline"
+        android:rotation="120"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_biceps"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="375dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="10dp"
         android:onClick="clickbiceps"
         android:text="Biceps"
         android:textAlignment="center"
-        android:textColor="@color/white"
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/btn_logout3"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="104dp"
-
+        android:layout_height="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
         android:onClick="clicklogout"
         android:text="Logout"
-        android:textColor="@color/white"
+        android:textSize="12sp"
         android:textStyle="bold" />
-
 </RelativeLayout>

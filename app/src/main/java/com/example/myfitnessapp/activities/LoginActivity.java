@@ -1,9 +1,10 @@
 package com.example.myfitnessapp.activities;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.myfitnessapp.AdminLogin;
 import com.example.myfitnessapp.R;
@@ -17,14 +18,13 @@ import com.google.android.material.textfield.TextInputLayout;
 import java.util.Objects;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
-import androidx.appcompat.widget.AppCompatTextView;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.widget.NestedScrollView;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
     private final AppCompatActivity activity = LoginActivity.this;
 
-    private NestedScrollView nestedScrollView;
+    private ConstraintLayout constraintLayout;
 
     private TextInputLayout textInputLayoutEmail;
     private TextInputLayout textInputLayoutPassword;
@@ -32,9 +32,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private TextInputEditText textInputEditTextEmail;
     private TextInputEditText textInputEditTextPassword;
 
-    private AppCompatButton appCompatButtonLogin;
+    private Button btnLogin;
 
-    private AppCompatTextView textViewLinkRegister;
+    private TextView tvLinkRegister;
 
     private InputValidation inputValidation;
     private DatabaseHelper databaseHelper;
@@ -55,17 +55,17 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
      */
     private void initViews() {
 
-        nestedScrollView = (NestedScrollView) findViewById(R.id.nestedScrollView);
+        constraintLayout = (ConstraintLayout) findViewById(R.id.constaintlayout);
 
-        textInputLayoutEmail = (TextInputLayout) findViewById(R.id.textInputLayoutEmail);
-        textInputLayoutPassword = (TextInputLayout) findViewById(R.id.textInputLayoutPassword);
+        textInputLayoutEmail = (TextInputLayout) findViewById(R.id.til_email);
+        textInputLayoutPassword = (TextInputLayout) findViewById(R.id.til_password);
 
-        textInputEditTextEmail = (TextInputEditText) findViewById(R.id.textInputEditTextEmail);
-        textInputEditTextPassword = (TextInputEditText) findViewById(R.id.textInputEditTextPassword);
+        textInputEditTextEmail = (TextInputEditText) findViewById(R.id.et_email);
+        textInputEditTextPassword = (TextInputEditText) findViewById(R.id.et_password);
 
-        appCompatButtonLogin = (AppCompatButton) findViewById(R.id.appCompatButtonLogin);
+        btnLogin = (Button) findViewById(R.id.btn_login);
 
-        textViewLinkRegister = (AppCompatTextView) findViewById(R.id.textViewLinkRegister);
+        tvLinkRegister = (TextView) findViewById(R.id.tv_linkRegister);
 
     }
 
@@ -73,8 +73,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
      * This method is to initialize listeners
      */
     private void initListeners() {
-        appCompatButtonLogin.setOnClickListener(this);
-        textViewLinkRegister.setOnClickListener(this);
+        btnLogin.setOnClickListener(this);
+        tvLinkRegister.setOnClickListener(this);
     }
 
     /**
@@ -94,10 +94,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.appCompatButtonLogin:
+            case R.id.btn_login:
                 verifyFromSQLite();
                 break;
-            case R.id.textViewLinkRegister:
+            case R.id.tv_linkRegister:
                 // Navigate to RegisterActivity
                 Intent intentRegister = new Intent(getApplicationContext(), RegisterActivity.class);
                 startActivity(intentRegister);
@@ -131,7 +131,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         } else {
             // Snack Bar to show success message that record is wrong
-            Snackbar.make(nestedScrollView, getString(R.string.error_valid_email_password), Snackbar.LENGTH_LONG).show();
+            Snackbar.make(constraintLayout, getString(R.string.error_valid_email_password), Snackbar.LENGTH_LONG).show();
         }
     }
 

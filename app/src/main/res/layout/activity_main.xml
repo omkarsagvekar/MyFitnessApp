@@ -8,26 +8,25 @@
     android:background="@drawable/pullups_man">
 
     <Button
-        android:id="@+id/btn"
+        android:id="@+id/btn_adLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="213dp"
         android:onClick="click"
         android:text="ENTER"
-        android:layout_centerHorizontal="true"
-        android:textColor="@color/colorPrimary"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:textStyle="bold|italic" />
 
     <TextView
-        android:id="@+id/txtView"
+        android:id="@+id/tv_title"
         android:layout_width="221dp"
         android:layout_height="95dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="148dp"
-        android:text="MY GYM \nAPP"
+        android:text="MY FITNESS \nAPP"
         android:textAlignment="center"
         android:textColor="@color/colorBackground"
         android:textSize="36sp"
